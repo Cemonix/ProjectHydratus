@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = [
+    "hydratus-core",
+    "hydratus-editor",
+    "hydratus-game",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Cemonix gittlermilan@gmail.com"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/Cemonix/ProjectHydratus"
+
+[workspace.dependencies]
