@@ -1,10 +1,11 @@
-use std::path::PathBuf;
+use crate::asset_manager::FileUri;
 
-pub fn central_panel(ctx: &egui::Context, frame: &mut eframe::Frame, background: &mut Option<PathBuf>) {
+pub fn central_panel(ctx: &egui::Context, background: &mut Option<FileUri>, selected_tile: &mut Option<String>) {
     egui::CentralPanel::default().show(
         ctx, |ui| {
             if let Some(background) = background {
-                ui.image(format!("file://{}", background.display()));
+                ui.image(&background.uri);
+                
             }
         }
     );

@@ -1,4 +1,4 @@
-pub fn left_panel(ctx: &egui::Context, _frame: &mut eframe::Frame) {
+pub fn left_panel(ctx: &egui::Context) {
     egui::SidePanel::left("Left Panel")
         .resizable(true)
         .min_width(160.)
