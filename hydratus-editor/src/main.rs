@@ -1,6 +1,7 @@
 mod editor;
 mod panels;
 mod components;
+mod asset_manager;
 
 use crate::editor::MapEditor;
 
